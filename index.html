@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+<!-- Head Start -->   
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SC-Gebäudereinigung ist Ihr zuverlässiger Partner für Reinigungsdienstleistungen in Heimsheim und Umgebung.">
+    <meta name="keywords" content="Gebäudereinigung, Büroreinigung, Treppenreinigung, Reinigungsdienstleistungen, Heimsheim">
+    <title>SC-Gebäudereinigung</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0"></script>
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+
+<!-- Head Ende -->   
+
+<body>
+    <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+
+        <!-- Nav Start -->   
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="nav-link" href="#" style="color: var(--text-color);"><i class="fas fa-phone-alt"></i> Telefon</a>
+            <img src="images/logoicon.png" alt="Logo" class="img-fluid logoicon">
+            <img src="images/logotext.png" alt="Logo" class="img-fluid logotext">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: black;"><i class="fas fa-envelope"></i> Kontakt</a>
+        </div>
+    </nav>
+      <!-- Nav Ende -->   
+
+
+
+          <!-- Kontakt Popup Fenster Start -->   
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Kontaktinformationen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h6>Firma</h6>
+                        <p>SC-Gebäudereinigung</p>
+                    </li>
+                   
+                    <li class="list-group-item">
+                        <h6>Telefon</h6>
+                        <a href="tel:+4917675889373">+49 176 75889373</a></p>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>E-Mail</h6>
+                        <a href="mailto:info@sc-reinigung.de">info@sc-reinigung.de</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Standort</h6>
+                        <p>Heimsheim</p>
+                    </li>
+                </ul>
+            </div>   <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Kontakt Popup Fenster Ende -->   
+
+
+
+<!-- Hero Section Start -->   
+<div class="overlay"></div><div class="backgroundhero">
+<section class="jumbotron">
+    <svg class="bannershape" height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <clipPath id="svgClip" clipPathUnits="objectBoundingBox">
+                <path d="M0,0.9 C0.2,0.95 0.4,0.88 0.5,0.9 C0.6,0.92 0.8,0.96 1,0.9 L1,0 L0,0 Z" />
+    
+            </clipPath>
+        </defs>
+    </svg>
+      <div class="overlaymobile"></div>
+
+
+
+    
+<div class="shape-bottom-center"></div>
+
+
+            <div class="container ">
+                <div class="row align-items-center">
+                    <!-- Linke Spalte -->
+                    <div class="col-lg-6 mb-4 mb-lg-0 links">
+                        <h2 class="display-4">Willkommen bei SC-Gebäudereinigung</h2>
+                        <p class="lead">Vertrauen Sie uns, um Ihre Räume in Bestform zu halten!</p>
+                    </div>
+        
+
+
+                    <div class="col-lg-6">
+                        <div class="about-style-four">
+                            <div class="form">
+                                <div class="appinment-forms standard">
+                
+                                    <!-- Ladeanzeige -->
+                                    <div id="loading-overlay">
+                                        <img src="images/logotext.png" alt="Logo" class="img-fluid logotexthero">
+                                    </div>
+                
+                                    <!-- Titel des Formulars -->
+                                    <p>Kostenloses Reinigungs Angebot</p> 
+                
+                                    <!-- Kontaktformular -->
+                                    <form action="/contact.php" method="POST" class="contact-form">
+                                        
+                                        <!-- Eingabefeld für den Namen -->
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name*" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                
+                                        <!-- Eingabefeld für die E-Mail -->
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                            <span class="alert-error"></span>
+                                        </div>
+                
+                                        <!-- Eingabefeld für die Telefonnummer -->
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Telefon" type="tel">
+                                            <span class="alert-error"></span>
+                                        </div>
+                
+                                        <!-- Dropdown-Menü für Reinigungsdienste -->
+                                        <div class="form-group">
+                                            <select id="themengebiet" name="themengebiet">
+                                                <option disabled selected value="1">Reinigungsdienste</option>
+                                          
+                                                <option value="Büroreinigung">Büroreinigung</option>
+                          
+                                                <option value="Treppenreinigung">Treppenreinigung</option>
+                                                <option value="Therassenreinigung">Terassenreinigung</option>
+                                                <option value="schulreinigung">Schulen/Kita</option>
+                                                <option value="Praxisreinigung">Praxisreinigung</option>
+                                                <option value="Fensterreinigung">Fensterreinigung</option>
+                                            </select>
+                                        </div>
+                
+                                        <!-- Submit-Button -->
+                                        <div class="form-group">
+                                            <button class="btn-animation dark border submitButton" type="submit" name="submit" id="submit">
+                                                <span>Jetzt anfragen <i class="fas fa-angle-right"></i></span>
+                                            </button>
+                                        </div>
+                
+                                    </form>
+                
+                                    <!-- Hinweis auf Pflichtfelder -->
+                                    <div class="smallText">Mit * gekennzeichnete Felder sind Pflichtfelder</div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ende des Formularbereichs -->
+                </section>
+
+
+
+<!-- Hero Section Ende -->   
+
+
+
+  <!-- Services Section Start -->
+  <section id="services" class="services-section">
+
+    <div class="container text-center">
+        <h2 class="animate__animated animate__fadeIn">Unsere Dienstleistungen</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="services-card" data-aos="fade-right">
+                    <article>
+                        <i class="fas fa-building services-icon"></i>
+                        <h3 class="feature-heading">Büroreinigung</h3>
+                        <p class="feature-description">Ein sauberes Büro für eine produktive Arbeitsumgebung.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="services-card" data-aos="fade-up">
+                    <article>
+                        <i class="fas fa-stairs services-icon"></i>
+                        <h3 class="feature-heading">Treppenreinigung</h3>
+                        <p class="feature-description">Sauber und sicher auf jeder Stufe.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="services-card" data-aos="fade-left">
+                    <article>
+                        <i class="fas fa-home services-icon"></i>
+                        <h3 class="feature-heading">Terassenreinigung</h3>
+                        <p class="feature-description">Sie haben einen Besonderen Wunsch? Kontaktieren Sie uns!.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="services-card" data-aos="fade-right">
+                    <article>
+                        <i class="fas fa-cogs services-icon"></i>
+                        <h3 class="feature-heading">Reinigung für Schulen/Kitas</h3>
+                        <p class="feature-description">Tiefgehende Reinigung für ein frisches Ergebnis.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="services-card" data-aos="fade-up">
+                    <article>
+                        <i class="fas fa-medkit services-icon"></i>
+                        <h3 class="feature-heading">Praxisreinigung</h3>
+                        <p class="feature-description">Hygiene für eine saubere und sichere Praxisumgebung.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="services-card" data-aos="fade-left">
+                    <article>
+                        <i class="fas fa-window-maximize services-icon"></i>
+                        <h3 class="feature-heading">Fensterreinigung</h3>
+                        <p class="feature-description">Klare Sicht, klare Fenster.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section Ende-->   
+
+<div>
+<svg class="rounded-shape" height="100" width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon fill="#73ccbc" points="0,100 100,100 0,0"/>
+</svg>
+
+    <!-- Warum wir Start -->   
+    
+<section id="warumwir" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <i class="fas fa-broom fa-3x mb-4"></i>
+                    <h3 class="h5">Professionelle Reinigung</h3>
+                    <p>Unsere erfahrenen Reinigungskräfte sorgen für eine gründliche und professionelle Reinigung Ihrer Räumlichkeiten.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <i class="fas fa-clock fa-3x mb-4"></i>
+                    <h3 class="h5">Pünktlichkeit</h3>
+                    <p>Wir halten uns an vereinbarte Termine und sorgen dafür, dass Ihre Räume zuverlässig gereinigt werden.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <i class="fas fa-shield-alt fa-3x mb-4"></i>
+                    <h3 class="h5">Zuverlässigkeit</h3>
+                    <p>Vertrauen Sie auf unsere zuverlässigen Reinigungsdienste, um eine saubere und hygienische Umgebung zu gewährleisten.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<svg class="rounded-shape" height="100" width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon fill="#73ccbc" points="0,0 100,0 100,100"></polygon>
+</svg>
+
+
+<!-- Warum wir Ende -->   
+
+
+<!-- Rezensionen Start -->   <!-------------------------------------------------
+
+<section id="testimonials"  class=" rezensionen">
+    <div class="container">
+        <div class="site-heading text-center">
+    
+            <h2>Was unsere Kunden über uns sagen</h2><br>
+            <div class="devider"></div>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+          
+                <div class="carousel-item active">
+                    <div class="card testimonial-card">
+                        <img src="images/google_logo.png" alt="Google Logo" class="google-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Jasmin Marktreiter</h5>
+                            <p class="card-text">
+                                Nach einem kurzen Telefonat mit dem Geschäftsführer persönlich wurde uns ein Termin direkt zwei Tage später zugesagt. Die Arbeiter erschienen pünktlich und mit notwendigem Material. Vorher dachten wir, dass unsere Fenster unmöglich zu erreichen wären. Aber das Team putze jegliche Fenster und alles weitere problemlos und streifenfrei. Wir sind mit dem Preis-Leistungsverhältnis sehr zufrieden und werden die Firma in Zukunft weiter beauftragen.
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733; &#189;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="carousel-item">
+                    <div class="card testimonial-card">
+                        <img src="images/google_logo.png" alt="Google Logo" class="google-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Miljana Smith</h5>
+                            <p class="card-text">
+                                Nach einem kurzen Telefonat mit dem Geschäftsführer persönlich wurde uns ein Termin direkt zwei Tage später zugesagt. Die Arbeiter erschienen pünktlich und mit notwendigem Material. Vorher dachten wir, dass unsere Fenster unmöglich zu erreichen wären. Aber das Team putze jegliche Fenster und alles weitere problemlos und streifenfrei. Wir sind mit dem Preis-Leistungsverhältnis sehr zufrieden und werden die Firma in Zukunft weiter beauftragen. 
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="carousel-item">
+                    <div class="card testimonial-card">
+                        <img src="images/google_logo.png" alt="Google Logo" class="google-logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Shane Bron</h5>
+                            <p class="card-text">
+                                Nach einem kurzen Telefonat mit dem Geschäftsführer persönlich wurde uns ein Termin direkt zwei Tage später zugesagt. Die Arbeiter erschienen pünktlich und mit notwendigem Material. Vorher dachten wir, dass unsere Fenster unmöglich zu erreichen wären. Aber das Team putze jegliche Fenster und alles weitere problemlos und streifenfrei. Wir sind mit dem Preis-Leistungsverhältnis sehr zufrieden und werden die Firma in Zukunft weiter beauftragen.                          </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        </section>
+
+    REZENSIONEN-->
+
+<!-- Referenzen Section Start -->
+<section class="referenzen-section">
+    <div class="container">
+        <!-- Überschrift für die Referenzen -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="referenzen-heading text-center" style="color: var(--primary-color);">Unsere Referenzen</h1>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class=" reffirmen col-12 col-md-4 mb-4">  <h4>Deutsche Asphalt</h4>
+                <a href="https://https://www.deutsche-asphalt.de/" target="_blank" class="referenzen-link">
+                    <img src="images/asphalt.png" alt="Autohaus Völter Logo" class="referenzen-logo img-fluid">
+                
+                
+                
+                </a>
+            </div>
+            <div class=" reffirmen col-12 col-md-4 mb-4">  <h4>Autohaus Völter</h4>
+                <a href="https://autohaus-voelter.de/" target="_blank" class="referenzen-link">
+                    <img src="images/autohaus.png" alt="Autohaus Völter Logo" class="referenzen-logo img-fluid">
+                  
+                </a>
+            </div>
+            <div class="reffirmen col-12 col-md-4 mb-4">  <h4>Schwarzwald Lab</h4>
+                <a href="https://www.schwarzwald-lab.de/" target="_blank" class="referenzen-link">
+                    <img src="images/schwarzwald.webp" alt="Schwarzwald Lab Logo" class="referenzen-logo img-fluid">
+                  
+                </a>
+            </div>
+        
+        </div>
+    </div>
+</section>
+<!-- Referenzen Section
+
+<section id="subunternehmen" class="subfirmen py-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 40px; border-radius: 15px;">
+                <h2 style="font-size: 2.5em; color: #333; margin-bottom: 20px;">Unsere Partner</h2>
+                <p style="font-size: 1.2em; color: #555;">Wir arbeiten auch mit zuverlässigen Subunternehmen zusammen, um unseren Kunden die bestmöglichen Reinigungsdienstleistungen anzubieten.</p>
+       
+                <a href="#kontakt" class="btn btn-primary btn-lg" style="margin-top: 20px; border-radius: 5px;" data-bs-toggle="modal" data-bs-target="#contactModal">Kontaktieren Sie uns</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  Ende -->
+
+            <footer>
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h4>Standort</h4>
+                            <p style="font-size: 0.8rem;">71296 Heimsheim</p>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Kontakt</h4>
+                            <p style="font-size: 0.8rem;"><a href="tel:+4917675889373">+49 176 75889373</a></p>
+                            <p style="font-size: 0.8rem;"> <a href="mailto:info@sc-reinigung.de">info@sc-reinigung.de</a></p>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Öffnungszeiten</h4>
+                            <p><strong>Mo-Fr:</strong> 8:00 - 18:00 Uhr</p>
+                            <p><strong>Sa:</strong> 9:00 - 14:00 Uhr</p>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <!-- Social Media Icons -->
+                
+                        <a href="https://www.instagram.com/deinInstagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.google.com/deinGoogle" target="_blank"><i class="fab fa-google"></i></a>
+            
+                        <p style="font-size: 0.8rem;"> &copy; 2023 SC-Gebäudereinigung. Alle Rechte vorbehalten.</p>
+                        <span><a href="#impressumModal" data-bs-toggle="modal">Impressum</a></span><br>
+                        <span class="programmer" style="font-size: 0.8rem;">Programmierung & Umsetzung <a href="http://emre-it.de">EmreIT</a></span>
+                    </div>
+                </div>
+            </footer>
+
+
+<!-- Impressum Modal -->
+<div class="modal fade" id="impressumModal" tabindex="-1" aria-labelledby="impressumModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="impressumModalLabel">Impressum</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <h4>Angaben gemäß § 5 TMG:</h4>
+                <p><strong>Stefano Battois</strong><br>
+                Sc-Gebäudereinigung<br>
+                Mönsheimerstr. 19<br>
+                71296 Heimsheim</p>
+                
+                <p><strong>Vertreten durch:</strong><br>
+                Stefano Battois</p>
+                
+                <h4>Kontakt:</h4>
+                <p>Telefon: 0176 7588 9373<br>
+                E-Mail: <a href="mailto:info@sc-reinigung.de">info@sc-reinigung.de</a></p>
+                
+
+                
+                <h4>Umsatzsteuer:</h4>
+                <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                    DE366269680</p>
+                
+                <h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h4>
+                <p>Stefano Battois<br>
+                Mönsheimerstr. 19<br>
+                71296 Heimsheim</p>
+                
+   
+                    <h4>Haftungsausschluss (Disclaimer)</h4>
+                    
+                    <h5>Haftung für Inhalte</h5>
+                    <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Jedoch sind wir nach §§ 8 bis 10 TMG nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen bleiben nach den allgemeinen Gesetzen hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+                    
+                    <h5>Haftung für Links</h5>
+                    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+                    
+                    <h5>Urheberrecht</h5>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+                </div>
+                
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer Ende -->   
+
+
+
+
+    <!-- Skripte  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                offset: 200,
+                duration: 1000,
+            });
+
+            var controller = new ScrollMagic.Controller();
+
+            $('.services-card').each(function () {
+                var scene = new ScrollMagic.Scene({
+                    triggerElement: this,
+                    triggerHook: 0.8,
+                    reverse: false
+                })
+                .setClassToggle(this, 'animated')
+                .addTo(controller);
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                if ($(document).height() - $(window).height() - $(this).scrollTop() < 100) {
+                    $('#scrollToTopBtn').fadeIn(200);
+                } else {
+                    $('#scrollToTopBtn').fadeOut(200);
+                }
+    
+                $('#scrollToTopBtn').click(function () {
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                    return false;
+                });
+            });
+        </script>
+<script src="mail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0"></script>
+    <script src="https://kit.fontawesome.com/a7646bbf3c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/touchSwipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
+</body>
+
+</html>

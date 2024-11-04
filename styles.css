@@ -1,0 +1,710 @@
+:root {
+    --primary-color: #73ccbc;
+    --secondary-color: rgb(255, 255, 255);
+    --orange-color: #fff5f5;
+    --background-color: #fff;
+    --text-color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.rounded-shape{
+    margin-top: -1px !important;
+}
+
+.submitButton{
+    background-color: var(--primary-color);
+}
+
+.form{
+
+padding-top: 50px !important;
+    margin-bottom: 100px;
+}
+/* Füge diese Styles in deine CSS-Datei oder in den <style> Bereich in deinem HTML-Dokument ein */
+
+a {
+    color: var(--primary-color); /* Hier kannst du die gewünschte Farbe angeben, zum Beispiel Orange (#ff6600) */
+}
+
+a:hover {
+    color: #fff; /* Hier kannst du die Farbe ändern, wenn der Link gehovered wird */
+}
+
+.banner-area {
+    position: relative;
+    height: 90%;
+
+}/* Füge diese Styles in deine CSS-Datei oder in den <style> Bereich in deinem HTML-Dokument ein */
+
+.top-heading h2 {
+
+    font-family: 'Poppins', sans-serif; /* Verwende die gewünschte Schriftart */
+    font-weight: 700; /* Ändere das Schriftgewicht nach Bedarf */
+    font-size: 3.5rem !important; /* Ändere die Schriftgröße nach Bedarf */
+    margin-bottom: 20px; /* Füge etwas Abstand unterhalb des Textes hinzu */
+}
+
+.top-heading p{
+    color:;
+}
+
+
+.desktoplogoicon{
+    display: block;
+    width: 300px;
+    margin-left: -60px;
+}
+
+.shape-bottom-center {
+    background: url('images/wave.svg') center bottom / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.logotext{
+    width: 10%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.text-light {
+    color: #f8f9fa!important;
+}
+
+.text-left{
+
+    color: #fff ;
+}
+
+.custom-curve {
+    z-index: -5;
+}
+
+.backgroundhero{
+    background-color: var(--background-color);
+    height: 100vh;
+
+}
+
+nav p {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.navbar {
+    z-index: 999;
+    background-color:var(--text-color);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--text-color);
+}
+
+.google-logo{
+    max-width: 50px;
+    margin: auto;
+
+
+}
+
+.nav-link {
+    font-size: 0.8rem;
+    color:var(--primary-color) !important;
+    padding: 5px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link i {
+    color: var(--primary-color);
+}
+
+.nav-link:hover i {
+    color: var(--secondary-color);
+}
+
+.nav-link.phone i {
+    color: var(--primary-color) !important ;
+}
+
+
+
+.jumbotron {
+    position: relative;
+    height: 100vh; /* 100% der Bildschirmhöhe, kannst du nach Bedarf ändern */
+    background: rgba(0, 0, 0, 0.1) url('images/herobg.webp') center center / cover no-repeat;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    clip-path: url(#svgClip); /* Verweise auf die ClipPath aus deinem SVG */
+}
+
+
+
+
+.overlaymobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url(images/herobg.webp);
+    background-size: cover; /* oder background-size: contain; je nach Bedarf */
+    background-position: center; /* oder ändern Sie dies entsprechend Ihren Anforderungen */
+    opacity: 0.2;
+    z-index: -1;
+}
+
+
+
+.jumbotron h2 {
+    font-size: 3rem; /* Beispiel für die Überschriftsgröße, kannst du anpassen */
+
+}
+
+.jumbotron p {
+    font-size: 1.5rem; /* Beispiel für den Textgröße, kannst du anpassen */
+
+}
+
+/* Weitere Stile nach Bedarf anpassen */
+
+
+/* Weitere Stile nach Bedarf anpassen */
+ /* Fügen Sie hier Ihren vorhandenen CSS-Stil hinzu */
+ .services-section {
+
+    background-color: var(--background-color) ;
+
+    margin-bottom: 30px;
+}
+
+.services-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.services-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-size: 1.5em;
+    padding: 15px 30px;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.about-section,
+.services-section,
+.testimonial-section,
+.gallery-section,
+.contact-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.rezensionen{
+    background-color: #ffffff !important;
+}
+
+.about-section h2,
+.services-section h2,
+.testimonial-section h2,
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.about-section p,
+.services-section p,
+.testimonial-section p,
+.contact-section p {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.feature-icon {
+    font-size: 4em;
+    color: var(--primary-color);
+}
+
+.feature-heading {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature-description {
+    font-size: 1.3em;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-control {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.testimonial-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 1.3em;
+    color: #555;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.services-icon {
+    font-size: 4em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.services-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.services-card:hover {
+    transform: scale(1.05);
+}
+
+        /* Footer-Stile */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-info {
+            margin-top: 20px;
+            color: #b0b0b0;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 15px;
+            color: #73ccbc; /* Hervorhebungsfarbe für Überschriften */
+        }
+
+        .footer-column p {
+            line-height: 1.6;
+        }
+
+.services-card p {
+    font-size: 1rem;
+}
+
+#warumwir {
+    border: 10px solid #73ccbc;
+    background-color: var(--primary-color); /* Hier kannst du die gewünschte Hintergrundfarbe in HEX oder RGB eintragen */
+
+    padding: 80px 0; /* Vertikaler Abstand oben und unten für den Inhalt */
+}
+
+.feature-box {
+    margin-bottom: 30px; /* Abstand zwischen den Feature-Boxen */
+}
+
+.feature-box i {
+    display: block; /* Block-Element für das Icon, um den unteren Abstand zu steuern */
+    margin-bottom: 10px; /* Unterer Abstand für das Icon */
+}
+
+
+.services-section {
+    margin-top: -50px;
+    padding: 20px 0;
+}
+
+
+
+.services-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.services-card.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.services-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.col-lg-4 {
+    margin-bottom: 10px;
+}
+
+
+/* Add some spacing below the icon */
+.fa-broom-and-bucket {
+    margin-bottom: 20px;
+}
+
+#testimonials{
+    text-align: center !important;
+
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+
+.subfirmen{
+padding: 20px;
+    background-color: var(--primary-color) !important;
+}
+
+
+.subdiv{
+    height: 100%; padding: 20px !important;
+}
+
+.services-card p{
+    font-size: 1rem;
+}
+
+.services-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Set a consistent height for all services cards */
+}
+.col-lg-4{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Stile für das Modal */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.text-section {
+    margin-top: 20px;
+}
+
+.first-letter {
+    font-size: 24px;
+    line-height: 1.4;
+    color: #333; /* Farbe anpassen */
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.logotexthero {
+display: none;
+
+
+
+}
+.appinment-forms p{
+    font-size: 1rem;
+
+}
+
+.appinment-forms input{
+    height: 40px;
+
+}
+
+.appinment-forms {
+    position: relative;
+margin-top: 120px;
+
+    background: #ffffff;
+    padding: 50px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 8%);
+    border-radius: 30px;
+}
+
+.appinment-forms .form-group {
+    margin-bottom: 10px;
+}
+
+.appinment-forms select,
+.appinment-forms input[type="text"],
+.appinment-forms input[type="email"],
+.appinment-forms input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.appinment-forms select:focus,
+.appinment-forms input[type="text"]:focus,
+.appinment-forms input[type="email"]:focus,
+.appinment-forms input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.appinment-forms .btn-animation {
+    display: inline-block;
+    border: 2px solid transparent;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.appinment-forms .btn-animation:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-color: #007bff;
+}
+
+.btn {
+    /* Primary button color */
+    background-color: var(--primary-color) !important; /* Replace with your primary color */
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s !important, transform 0.3s !important;
+}
+
+.btn:hover, .btn:focus {
+    /* Hover effect - slightly darker shade of the primary color */
+    background-color:var(--text-color)!important; /* Adjust the color for hover effect */
+    /* Slight raise effect */
+    transform: translateY(-2px) !important;
+}
+
+.btn:active {
+    /* Active state effect - even darker shade */
+    background-color: #004080 !important; /* Adjust the color for active state */
+    /* Pressed effect */
+    transform: translateY(1px) !important;
+}
+
+
+.logohero{
+    width: 1000px;
+}
+.logoicon{
+    display: none;
+
+}
+
+.programmer{
+    font-size:  0.6rem !important;
+}
+
+.referenzen-logo {
+    max-width: 55%; /* Responsive Logos */
+    transition: transform .3s ease; /* Animation für Hover-Effekt */
+}
+
+.referenzen-heading{
+    margin-bottom: 50px;
+}
+.referenzen-logo:hover {
+    transform: scale(1.05); /* Vergrößert das Logo beim Hover */
+}
+
+.reffirmen{
+    margin-bottom: 100px !important;
+}
+
+@media (max-width: 1500px){
+    .desktoplogoicon{
+        margin: auto;}
+.logotext{
+    width: 20%;}
+
+}
+
+.smallText{
+    font-size: 0.8rem !important;
+
+
+}
+@media (max-width: 576px) {
+    .referenzen-logo {
+        max-width: 75%;
+    }
+    .subdiv{
+        height: 100vh;
+    }
+    .top-heading{
+        margin-top: 100px !important;
+    }
+    .jumbotron {
+        height: 100%;
+        padding: 30px;
+        width: 100%;
+        background: none;
+        background-color: var(--primary-color) !important;
+    }
+    .desktoplogoicon{
+        display: none;
+    }
+    .shape-bottom-center {
+        display: none;
+    }
+
+    .jumbotron {
+        text-align: center !important;
+    }
+
+    .form {
+        height: 1000px !important;;
+    }
+
+    .logotext{
+        display: none;
+
+
+
+    }
+
+    .logoicon{
+        display: block;
+        width: 20%;
+    }
+    .logofull{
+        display: none;
+    }
+
+    .logotexthero {
+
+        display: block;
+        padding: 5px;
+
+        background-color: #333;
+border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+    .links{
+        display: none !important;
+    }
+}
+
+#contact {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
